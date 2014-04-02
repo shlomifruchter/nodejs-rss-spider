@@ -1,0 +1,11 @@
+{
+  "name": "rss-spider-service",
+  "description": "RSS crawler",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.5.1",
+	"mongoose": "3.8.8",
+	"feedparser": "0.16.3"
+  }
+}
