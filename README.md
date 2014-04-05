@@ -24,9 +24,9 @@ bower install
 grunt server
 ```
 
-**Using the API to crawl RSS feeds**
+##Using the API to crawl RSS feeds
 
-post a JSON to /crawl, for example:
+Post a JSON to localhost:3000/crawl, using the following structure:
 
 ```
 {
