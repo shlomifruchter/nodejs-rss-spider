@@ -6,7 +6,7 @@ var http = require('http');
 var app = express();
 app.use(express.json());       // to support JSON-encoded bodies
 app.use(express.urlencoded()); // to support URL-encoded bodies
-app.use(express.static('public')); // serve static content from app dir
+app.use(express.static('public')); // serve static content from public dir
 
 // MongoDB setup
 
