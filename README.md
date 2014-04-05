@@ -16,8 +16,8 @@ nodejs-rss-spider
 
 **Install the following npm packages:**
 ```sh
-        npm install -g bower
-        npm install -g grunt-cli
+npm install -g bower
+npm install -g grunt-cli
 ```
 
 **Install dependencies:**
@@ -33,10 +33,12 @@ grunt server
 
 ##Using the API to crawl RSS feeds
 
-Post a JSON to localhost:3000/crawl, using the following structure:
+Post a JSON to http://localhost:3000/crawl, using the following structure:
 
 ```
 {
 	"url": "http://rss.cnn.com/rss/edition.rss"
 }
 ```
+
+The crawled URLs will be displayed in http://localhost:3000/#/posts.
