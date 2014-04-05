@@ -78,18 +78,6 @@ app.get('/posts', function(req, res) {
 	})
 });
 
-app.post('/posts', function(req, res) {
-	var postModel = new PostModel({ url: req.body.url });
-	postModel.save(function (err) {
-		if (!err) {
-			res.send("Post with url " + postModel.url + " created");
-			return console.log("Post with url " + postModel.url + " created");
-		} else {
-			return console.log(err);
-		}
-	});
-});
-
 app.post('/crawl', function(req, res) {
 	fetchAndParseFeedUrl(req.body.url, function(result) {
 		res.send(result);

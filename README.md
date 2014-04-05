@@ -13,13 +13,23 @@ nodejs-rss-spider
         npm install -g grunt-cli
 ```
 
-**Install dependencies**
+**Install dependencies:**
 ```sh
-        npm install
-        bower install
+npm install
+bower install
 ```
 
 **Run local server which will launch a nodejs server on port 3000:**
 ```sh
-        grunt server
+grunt server
+```
+
+**Using the API to crawl RSS feeds**
+
+post a JSON to /crawl, for example:
+
+```
+{
+	"url": "http://rss.cnn.com/rss/edition.rss"
+}
 ```
