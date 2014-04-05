@@ -16,7 +16,7 @@ app.use(express.static('public')); // serve static content from public dir
 // MongoDB setup
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect('mongodb://localhost/rssspider');
 var db = mongoose.connection;
 
 var postSchema = mongoose.Schema({
