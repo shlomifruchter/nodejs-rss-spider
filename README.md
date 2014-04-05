@@ -8,6 +8,7 @@ nodejs-rss-spider
 3. Install the following npm packages:
 ```sh
         npm install -g bower
+        npm install -g grunt-cli
 ```
 4. Install dependencies
 ```sh
