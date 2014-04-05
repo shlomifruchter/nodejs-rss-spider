@@ -1,11 +1,14 @@
 <div class="container-fluid">
+    <div><h1>Crawled Posts</h1></div>
     <div class="row-fluid">
-        <div class="span10">
-            <ul class="posts">
-                <li ng-repeat="post in posts" class="thumbnail">
-                    <a href="{{post.link}}">{{post.title}}</a>
-                </li>
-            </ul>
+        <div class="list-group">
+            <a href="{{post.link}}" class="list-group-item" ng-repeat="post in posts">
+                <h4 class="list-group-item-heading">{{post.title}}</h4>
+                <p class="list-group-item-text">{{post.description}}</p>
+                <div class="source-container">
+                    <i class="fa fa-globe"></i><span class="source-caption">source:</span> {{post.feed}}
+                </div>
+            </a>
         </div>
     </div>
 </div>
