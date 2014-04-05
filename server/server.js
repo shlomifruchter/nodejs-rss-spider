@@ -55,7 +55,7 @@ var fetchAndParseFeedUrl = function (url, success, error) {
 					
 					while (item = stream.read()) {
 						var postModel = new PostModel({
-							"feed": feedMeta.title,
+							"feed": feedMeta ? feedMeta.title : "n/a",
 							"title": item.title,
 							"link": item.link,
 							"description": item.description
